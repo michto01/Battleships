@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		40550D781B0E5689002D2634 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 40550D771B0E5689002D2634 /* main.c */; };
+		40550D811B0E5E4B002D2634 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 40550D7F1B0E5E4B002D2634 /* map.c */; };
+		40550D841B0E781D002D2634 /* ship.c in Sources */ = {isa = PBXBuildFile; fileRef = 40550D821B0E781D002D2634 /* ship.c */; };
+		40550D871B0EBD11002D2634 /* score.c in Sources */ = {isa = PBXBuildFile; fileRef = 40550D851B0EBD11002D2634 /* score.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		40550D741B0E5689002D2634 /* Warships */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Warships; sourceTree = BUILT_PRODUCTS_DIR; };
 		40550D771B0E5689002D2634 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		40550D7E1B0E5AA8002D2634 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		40550D7F1B0E5E4B002D2634 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		40550D801B0E5E4B002D2634 /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		40550D821B0E781D002D2634 /* ship.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ship.c; sourceTree = "<group>"; };
+		40550D831B0E781D002D2634 /* ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ship.h; sourceTree = "<group>"; };
+		40550D851B0EBD11002D2634 /* score.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = score.c; sourceTree = "<group>"; };
+		40550D861B0EBD11002D2634 /* score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = score.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				40550D771B0E5689002D2634 /* main.c */,
+				40550D7E1B0E5AA8002D2634 /* common.h */,
+				40550D861B0EBD11002D2634 /* score.h */,
+				40550D851B0EBD11002D2634 /* score.c */,
+				40550D801B0E5E4B002D2634 /* map.h */,
+				40550D7F1B0E5E4B002D2634 /* map.c */,
+				40550D831B0E781D002D2634 /* ship.h */,
+				40550D821B0E781D002D2634 /* ship.c */,
 			);
 			path = Warships;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40550D871B0EBD11002D2634 /* score.c in Sources */,
+				40550D811B0E5E4B002D2634 /* map.c in Sources */,
 				40550D781B0E5689002D2634 /* main.c in Sources */,
+				40550D841B0E781D002D2634 /* ship.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +225,7 @@
 		40550D7C1B0E5689002D2634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +233,7 @@
 		40550D7D1B0E5689002D2634 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
